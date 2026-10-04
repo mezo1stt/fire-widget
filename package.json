@@ -1,15 +1,19 @@
 {
   "name": "fire-widget",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Fire Widget for TikTok Live",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "postinstall": "npm rebuild sqlite3 --build-from-source"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "dependencies": {
     "express": "^5.2.1",
     "sqlite3": "^6.0.1"
